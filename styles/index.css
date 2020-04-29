@@ -1,0 +1,92 @@
+html, body{
+	height: 100%;
+}
+
+.page{
+	height: 100%;
+	display: table;
+	width:400px;
+	margin: 0 auto;
+}
+
+.page__cell{
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.teams-list{
+	margin-bottom: 10px;
+}
+
+.teams-list.teams-list--mixing{
+	position: relative;
+	height: 37px;
+}
+
+.teams-list.teams-list--mixing .teams-list__item{
+	position: absolute;
+	top:0;
+	left:0;
+
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.teams-list .teams-list__item{
+	padding: 10px 40px;
+	border: solid 1px grey;
+	margin-bottom: 10px;
+
+	border-radius: 10px;
+	background: white;
+
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.button{
+	position: fixed;
+	top:50%;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	border: solid 1px #06b109;
+	margin-bottom: 10px;
+
+	background: #35c80e;
+
+	border-radius: 50px;
+
+	box-shadow: 0 0 0 10px #bdbdbd;
+
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+
+	color: white;
+
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+	z-index: 1;
+}
+.button:hover{
+	background: #109904;
+}
+.button:active {
+	background: #108004;
+	box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.5), 0 0 0 10px #bdbdbd;
+}
+
+.overlay{
+	content: "";
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+	background: rgba(0,0,0,0.5);
+}
